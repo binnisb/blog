@@ -9,14 +9,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="First implementation of an epidemiology model, SIR." />
 <meta property="og:description" content="First implementation of an epidemiology model, SIR." />
-<link rel="canonical" href="https://binnisb.github.io/blog/jupyter/modelling/epidemiology/2020/04/01/Pandemic.html" />
-<meta property="og:url" content="https://binnisb.github.io/blog/jupyter/modelling/epidemiology/2020/04/01/Pandemic.html" />
+<link rel="canonical" href="https://binnisb.github.io/blog/data_science/2020/04/01/Pandemic.html" />
+<meta property="og:url" content="https://binnisb.github.io/blog/data_science/2020/04/01/Pandemic.html" />
 <meta property="og:site_name" content="Brain Relieve" />
 <meta property="og:image" content="https://binnisb.github.io/blog/images/pandemics/sir.svg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-04-01T00:00:00-05:00" />
 <script type="application/ld+json">
-{"datePublished":"2020-04-01T00:00:00-05:00","dateModified":"2020-04-01T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://binnisb.github.io/blog/jupyter/modelling/epidemiology/2020/04/01/Pandemic.html"},"description":"First implementation of an epidemiology model, SIR.","image":"https://binnisb.github.io/blog/images/pandemics/sir.svg","@type":"BlogPosting","url":"https://binnisb.github.io/blog/jupyter/modelling/epidemiology/2020/04/01/Pandemic.html","headline":"Pandemic modelling - SIR","@context":"https://schema.org"}</script>
+{"datePublished":"2020-04-01T00:00:00-05:00","dateModified":"2020-04-01T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://binnisb.github.io/blog/data_science/2020/04/01/Pandemic.html"},"description":"First implementation of an epidemiology model, SIR.","image":"https://binnisb.github.io/blog/images/pandemics/sir.svg","@type":"BlogPosting","url":"https://binnisb.github.io/blog/data_science/2020/04/01/Pandemic.html","headline":"Pandemic modelling - SIR","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://binnisb.github.io/blog/feed.xml" title="Brain Relieve" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Pandemic modelling - SIR | Brain Relieve</title>
@@ -25,14 +25,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="First implementation of an epidemiology model, SIR." />
 <meta property="og:description" content="First implementation of an epidemiology model, SIR." />
-<link rel="canonical" href="https://binnisb.github.io/blog/jupyter/modelling/epidemiology/2020/04/01/Pandemic.html" />
-<meta property="og:url" content="https://binnisb.github.io/blog/jupyter/modelling/epidemiology/2020/04/01/Pandemic.html" />
+<link rel="canonical" href="https://binnisb.github.io/blog/data_science/2020/04/01/Pandemic.html" />
+<meta property="og:url" content="https://binnisb.github.io/blog/data_science/2020/04/01/Pandemic.html" />
 <meta property="og:site_name" content="Brain Relieve" />
 <meta property="og:image" content="https://binnisb.github.io/blog/images/pandemics/sir.svg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-04-01T00:00:00-05:00" />
 <script type="application/ld+json">
-{"datePublished":"2020-04-01T00:00:00-05:00","dateModified":"2020-04-01T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://binnisb.github.io/blog/jupyter/modelling/epidemiology/2020/04/01/Pandemic.html"},"description":"First implementation of an epidemiology model, SIR.","image":"https://binnisb.github.io/blog/images/pandemics/sir.svg","@type":"BlogPosting","url":"https://binnisb.github.io/blog/jupyter/modelling/epidemiology/2020/04/01/Pandemic.html","headline":"Pandemic modelling - SIR","@context":"https://schema.org"}</script>
+{"datePublished":"2020-04-01T00:00:00-05:00","dateModified":"2020-04-01T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://binnisb.github.io/blog/data_science/2020/04/01/Pandemic.html"},"description":"First implementation of an epidemiology model, SIR.","image":"https://binnisb.github.io/blog/images/pandemics/sir.svg","@type":"BlogPosting","url":"https://binnisb.github.io/blog/data_science/2020/04/01/Pandemic.html","headline":"Pandemic modelling - SIR","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -95,7 +95,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/blog/about/">About Me</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/blog/about/">About Me</a><a class="page-link" href="/blog/categories/">Categories</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/tags/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -116,13 +116,7 @@ window.onload = wrap_img;
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/blog/categories/#jupyter">jupyter</a>
-        &nbsp;
-      
-        <a class="category-tags-link" href="/blog/categories/#modelling">modelling</a>
-        &nbsp;
-      
-        <a class="category-tags-link" href="/blog/categories/#epidemiology">epidemiology</a>
+        <a class="category-tags-link" href="/blog/categories/#data_science">data_science</a>
         
       
       </p>
@@ -432,7 +426,7 @@ by the following set of ordinary differential equations:</p>
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/blog/jupyter/modelling/epidemiology/2020/04/01/Pandemic.html" hidden></a>
+</script><a class="u-url" href="/blog/data_science/2020/04/01/Pandemic.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
