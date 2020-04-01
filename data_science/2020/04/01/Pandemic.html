@@ -150,8 +150,7 @@ window.onload = wrap_img;
     <ul class="section-nav">
 <li class="toc-entry toc-h1"><a href="#About">About </a>
 <ul>
-<li class="toc-entry toc-h2"><a href="#SIR">SIR </a></li>
-<li class="toc-entry toc-h2"><a href="#The-SIR-model">The SIR model </a></li>
+<li class="toc-entry toc-h2"><a href="#SIR-model">SIR model </a></li>
 <li class="toc-entry toc-h2"><a href="#Grid-of-$\beta$-and-$\gamma$">Grid of $\beta$ and $\gamma$ </a></li>
 </ul>
 </li>
@@ -185,28 +184,26 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="SIR">
-<a class="anchor" href="#SIR" aria-hidden="true"><span class="octicon octicon-link"></span></a>SIR<a class="anchor-link" href="#SIR"> </a>
+<h2 id="SIR-model">
+<a class="anchor" href="#SIR-model" aria-hidden="true"><span class="octicon octicon-link"></span></a>SIR model<a class="anchor-link" href="#SIR-model"> </a>
 </h2>
 <p>From Wikipedia: <a href="https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology">SIR</a>.</p>
 <blockquote>
-<p>The SIR model without vital dynamics:The dynamics of an epidemic, for example the flu, are often much faster than the dynamics of birth and death, 
+<p>The SIR model without vital dynamics:The dynamics of an epidemic, for example the flu, &gt; are often much faster than the dynamics of birth and death, 
 therefore, birth and death are often omitted in simple compartmental models.
 The SIR system without so-called vital dynamics (birth and death, 
 sometimes called demography) described above can be expressed 
-by the following set of ordinary differential equations:</p>
-</blockquote>
-<h2 id="The-SIR-model">
-<a class="anchor" href="#The-SIR-model" aria-hidden="true"><span class="octicon octicon-link"></span></a>The SIR model<a class="anchor-link" href="#The-SIR-model"> </a>
-</h2>
-<p>At time $t$ the SIR model is characterised by $S(t)$ for the number of susceptible in the population, $I(t)$ for the number of infected, and $R(t)$ for the number of recovered or deceased (or immune) individuals out of the population $N = S(t)+I(t)+R(t)$.</p>
-<p>People move through these stages as follows:</p>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/SIR_Flow_Diagram.svg/1200px-SIR_Flow_Diagram.svg.png" alt=""></p>
-\begin{aligned}
+by the following set of ordinary differential equations:$$\begin{aligned}
 &amp;{\frac {dS}{dt}}=-{\frac {\beta IS}{N}},\\
 &amp;{\frac {dI}{dt}}={\frac {\beta IS}{N}}-\gamma I,\\
 &amp;{\frac {dR}{dt}}=\gamma I,
 \end{aligned}
+$$</p>
+</blockquote>
+<p>At time $t$ the SIR model is characterised by $S(t)$ for the number of susceptible in the population, $I(t)$ for the number of infected, and $R(t)$ for the number of recovered or deceased (or immune) individuals out of the population $N = S(t)+I(t)+R(t)$.</p>
+<p>People move through these stages as follows:</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/SIR_Flow_Diagram.svg/1200px-SIR_Flow_Diagram.svg.png" alt=""></p>
+
 </div>
 </div>
 </div>
