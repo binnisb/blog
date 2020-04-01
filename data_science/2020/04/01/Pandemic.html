@@ -280,7 +280,7 @@ $$</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">SIR</span><span class="p">(</span><span class="mi">5000</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mf">0.3</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 <span class="n">f</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
-<span class="n">f</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">"../images/pandemics/sir.svg"</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">"images/pandemic/sir.svg"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -376,6 +376,7 @@ $$</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">FacetGrid</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$\beta$"</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$\gamma$"</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">"Variable"</span><span class="p">,</span> <span class="n">margin_titles</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">g</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">,</span> <span class="s2">"Time"</span><span class="p">,</span> <span class="s2">"Total"</span><span class="p">)</span>
 <span class="n">g</span><span class="o">.</span><span class="n">add_legend</span><span class="p">()</span>
+<span class="n">g</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">"images/pandemic/sir_grid.svg"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -384,16 +385,6 @@ $$</p>
 
 <div class="output_wrapper">
 <div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&lt;seaborn.axisgrid.FacetGrid at 0x7f2eabd95750&gt;</pre>
-</div>
-
-</div>
 
 <div class="output_area">
 
@@ -411,6 +402,20 @@ $$</p>
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><figure>
+  
+    <img class="docimage" src="/blog/images/copied_from_nb/images/pandemic/sir_grid.svg" alt="" style="max-width: 1200px">
+    
+    
+</figure>
+</p>
+
+</div>
+</div>
+</div>
 </div>
 
 
