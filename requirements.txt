@@ -1,0 +1,8 @@
+flake8
+ipython
+jupyterlab
+pandas
+seaborn
+scipy
+wheel
+altair
