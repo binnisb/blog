@@ -13,3 +13,6 @@ _notebooks/.ipynb_checkpoints
 __pycache__
 .vscode
 .venv
+.ipynb_checkpoints
+images/copied_from_nb/
+_posts
