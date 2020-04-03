@@ -17,7 +17,7 @@ Previous:
 * Research assistant in functional bioinformatics, and metagenomics
 
 ### Publications
-> Alneberg J, Bjarnason BS, De Bruijn I, Schirmer M, Quick J, Ijaz UZ, Lahti L, Loman NJ, Andersson AF, Quince C. Binning metagenomic contigs by coverage and composition. Nature methods. 2014 Nov;11(11):1144-6.
+> Alneberg J, Bjarnason BS, De Bruijn I, Schirmer M, Quick J, Ijaz UZ, Lahti L, Loman NJ, Andersson AF, Quince C. Binning metagenomic contigs by coverage and composition. Nature methods. 2014 Nov;11(11):1144-6. https://doi.org/10.1038/nmeth.3103
 
 
 ### Powered by
