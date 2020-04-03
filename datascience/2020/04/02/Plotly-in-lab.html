@@ -183,6 +183,10 @@ window.onload = wrap_img;
 <p>I'm running <a href="https://system76.com/pop">POP! os</a> which is based on Ubuntu.</p>
 <p>To be able to export <code>png, svg</code> or other formats one needs to install <a href="https://plotly.com/python/static-image-export/">few dependencies</a>:</p>
 <div class="highlight"><pre><span></span>$ apt install python3-dev
+$ python3 -m venv .venv
+$ <span class="nb">source</span> .venv/bin/activate
+$ python -m pip install -U pip wheel
+$ pip install -r requirements.txt
 $ yarn global add electron orca
 </pre></div>
 <p>For my projects I usually create a virtual env and create a <code>requirements.txt</code> file with dependencies for what I need.</p>
