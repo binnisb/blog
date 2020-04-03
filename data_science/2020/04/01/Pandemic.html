@@ -12,11 +12,11 @@
 <link rel="canonical" href="https://binnisb.github.io/blog/data_science/2020/04/01/Pandemic.html" />
 <meta property="og:url" content="https://binnisb.github.io/blog/data_science/2020/04/01/Pandemic.html" />
 <meta property="og:site_name" content="Brain Relieve" />
-<meta property="og:image" content="https://binnisb.github.io/blog/images/sir.svg" />
+<meta property="og:image" content="https://binnisb.github.io/blog/images/copied_from_nb/images/pandemic/sir.svg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-04-01T00:00:00-05:00" />
 <script type="application/ld+json">
-{"datePublished":"2020-04-01T00:00:00-05:00","dateModified":"2020-04-01T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://binnisb.github.io/blog/data_science/2020/04/01/Pandemic.html"},"description":"First implementation of an epidemiology model, SIR.","image":"https://binnisb.github.io/blog/images/sir.svg","@type":"BlogPosting","url":"https://binnisb.github.io/blog/data_science/2020/04/01/Pandemic.html","headline":"Pandemic modelling - SIR","@context":"https://schema.org"}</script>
+{"datePublished":"2020-04-01T00:00:00-05:00","dateModified":"2020-04-01T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://binnisb.github.io/blog/data_science/2020/04/01/Pandemic.html"},"description":"First implementation of an epidemiology model, SIR.","image":"https://binnisb.github.io/blog/images/copied_from_nb/images/pandemic/sir.svg","@type":"BlogPosting","url":"https://binnisb.github.io/blog/data_science/2020/04/01/Pandemic.html","headline":"Pandemic modelling - SIR","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://binnisb.github.io/blog/feed.xml" title="Brain Relieve" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Pandemic modelling - SIR | Brain Relieve</title>
@@ -28,11 +28,11 @@
 <link rel="canonical" href="https://binnisb.github.io/blog/data_science/2020/04/01/Pandemic.html" />
 <meta property="og:url" content="https://binnisb.github.io/blog/data_science/2020/04/01/Pandemic.html" />
 <meta property="og:site_name" content="Brain Relieve" />
-<meta property="og:image" content="https://binnisb.github.io/blog/images/sir.svg" />
+<meta property="og:image" content="https://binnisb.github.io/blog/images/copied_from_nb/images/pandemic/sir.svg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-04-01T00:00:00-05:00" />
 <script type="application/ld+json">
-{"datePublished":"2020-04-01T00:00:00-05:00","dateModified":"2020-04-01T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://binnisb.github.io/blog/data_science/2020/04/01/Pandemic.html"},"description":"First implementation of an epidemiology model, SIR.","image":"https://binnisb.github.io/blog/images/sir.svg","@type":"BlogPosting","url":"https://binnisb.github.io/blog/data_science/2020/04/01/Pandemic.html","headline":"Pandemic modelling - SIR","@context":"https://schema.org"}</script>
+{"datePublished":"2020-04-01T00:00:00-05:00","dateModified":"2020-04-01T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://binnisb.github.io/blog/data_science/2020/04/01/Pandemic.html"},"description":"First implementation of an epidemiology model, SIR.","image":"https://binnisb.github.io/blog/images/copied_from_nb/images/pandemic/sir.svg","@type":"BlogPosting","url":"https://binnisb.github.io/blog/data_science/2020/04/01/Pandemic.html","headline":"Pandemic modelling - SIR","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -109,7 +109,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -282,7 +282,8 @@ $$</p>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">SIR</span><span class="p">(</span><span class="mi">5000</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mf">0.3</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 <span class="n">f</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
-<span class="n">f</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">"sir.svg"</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">"images/pandemic/sir.svg"</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">clf</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -342,8 +343,10 @@ $$</p>
 <span class="n">N</span> <span class="o">=</span> <span class="mi">5000</span>
 <span class="n">I</span> <span class="o">=</span> <span class="mi">6</span>
 
+<span class="n">cols</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+<span class="n">rows</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
 <span class="n">res</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">𝛽</span><span class="p">,</span> <span class="n">𝛾</span> <span class="ow">in</span> <span class="n">product</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)):</span>
+<span class="k">for</span> <span class="n">𝛽</span><span class="p">,</span> <span class="n">𝛾</span> <span class="ow">in</span> <span class="n">product</span><span class="p">(</span><span class="n">cols</span><span class="p">,</span> <span class="n">rows</span><span class="p">):</span>
     <span class="n">𝛽</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">𝛽</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
     <span class="n">𝛾</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">𝛾</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
     <span class="n">s</span> <span class="o">=</span> <span class="n">SIR</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">I</span><span class="p">,</span> <span class="n">𝛽</span><span class="p">,</span> <span class="n">𝛾</span><span class="p">)</span>
@@ -358,10 +361,11 @@ $$</p>
         <span class="n">var_name</span><span class="o">=</span><span class="s2">"Variable"</span><span class="p">,</span> 
         <span class="n">value_name</span><span class="o">=</span><span class="s2">"Total"</span>
     <span class="p">)</span>
-<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">FacetGrid</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$\beta$"</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$\gamma$"</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">"Variable"</span><span class="p">,</span> <span class="n">margin_titles</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">FacetGrid</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$\beta$"</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$\gamma$"</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">"Variable"</span><span class="p">,</span> <span class="n">margin_titles</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">despine</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">g</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">,</span> <span class="s2">"Time"</span><span class="p">,</span> <span class="s2">"Total"</span><span class="p">)</span>
 <span class="n">g</span><span class="o">.</span><span class="n">add_legend</span><span class="p">()</span>
 <span class="n">g</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">"images/pandemic/sir_grid.svg"</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">clf</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -376,7 +380,7 @@ $$</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><figure>
   
-    <img class="docimage" src="/blog/images/copied_from_nb/images/pandemic/sir_grid.svg" alt="" style="max-width: 1200px">
+    <img class="docimage" src="/blog/images/copied_from_nb/images/pandemic/sir_grid.svg" alt="" style="max-width: 900px">
     
     
 </figure>

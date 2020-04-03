@@ -1,8 +1,13 @@
 flake8
 ipython
 jupyterlab
+ipywidgets
 pandas
 seaborn
 scipy
 wheel
 altair
+plotly
+cufflinks
+psutil
+requests
