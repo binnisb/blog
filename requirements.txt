@@ -5,7 +5,6 @@ ipywidgets
 pandas
 seaborn
 scipy
-wheel
 altair
 plotly
 cufflinks
