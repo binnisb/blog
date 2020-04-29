@@ -50,8 +50,8 @@
 
   
       ,"page1": {
-          "title": "About Me",
-          "content": "Education . B.Sc Computer Science | M.Sc. Computational and Systems Biology. | . Work . Current: . Quantitative analyst at Kommuninvest i Sverige. | . Previous: . Data engineer at Spotify | Research assistant in functional bioinformatics, and metagenomics | . Publications . Alneberg J, Bjarnason BS, De Bruijn I, Schirmer M, Quick J, Ijaz UZ, Lahti L, Loman NJ, Andersson AF, Quince C. Binning metagenomic contigs by coverage and composition. Nature methods. 2014 Nov;11(11):1144-6. https://doi.org/10.1038/nmeth.3103 . Powered by . fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "title": "About me",
+          "content": ". Bio . Education . M.Sc. Computational and Systems Biology. 2011-2013 (graduated 2017) | B.Sc Computer Science, University of Iceland, 2004-2008 | . Work . Current: . 2017-present, Quantitative analyst at Kommuninvest i Sverige | . Previous: . 2015-2017, Data engineer at Spotify | 2013-2015, Research assistant in functional bioinformatics and metagenomics at KTH and ÖRU | 2007-2011, Software developer. | . Publications . Alneberg J, Bjarnason BS, De Bruijn I, Schirmer M, Quick J, Ijaz UZ, Lahti L, Loman NJ, Andersson AF, Quince C. Binning metagenomic contigs by coverage and composition. Nature methods. 2014 Nov;11(11):1144-6. https://doi.org/10.1038/nmeth.3103 . Blog Powered by . fastpages 1. . GitHub Pages 2. . A blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . | Websites for you and your projects. Hosted directly from your GitHub repository. &#8617; . |",
           "url": "https://binnisb.github.io/blog/about/",
           "relUrl": "/about/",
           "date": ""
