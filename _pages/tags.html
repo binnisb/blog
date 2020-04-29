@@ -5,26 +5,31 @@ title: Tags
 search_exclude: true
 ---
 
+{% if site.tags.size > 0 %}
 <h2>Contents</h2>
 
-{% if site.tags.size > 0 %}
-<ul>
-{% for tag in site.tags %}
-  {% capture tag_name %}{{ tag | first }}{% endcapture %}
-  <li><a href="#{{ tag_name }}">{{ tag_name }}</a></li>
-{% endfor %}
-</ul>
+  {% assign tags = "" | split:"" %}
+  {% for t in site.tags %}
+    {% assign tags = tags | push: t[0] %}
+  {% endfor %}
+  {% assign tags = tags | sort_natural %}
+
+  <ul>
+  {% for tag in tags %}
+    <li><a href="#{{ tag }}">{{ tag }}</a></li>
+  {% endfor %}
+  </ul>
+
+  {% for tag in tags %}
+      <h3 id ="{{ tag }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ tag }}</h3>
+      <a name="{{ tag | slugize }}"></a>
+      {% for post in site.tags[tag] %}
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <article class="archive-item">
+        <p class="post-meta post-meta-title"><a class="page-meta" href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>  • {{ post.date | date: date_format }}</p>
+      </article>
+      {% endfor %}
+  {% endfor %}
+
 {% endif %}
 
-{% for tag in site.tags %}
-    {% capture tag_name %}{{ tag | first }}{% endcapture %}
-
-    <h3 id ="{{ tag_name }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ tag_name }}</h3>
-    <a name="{{ tag_name | slugize }}"></a>
-    {% for post in site.tags[tag_name] %}
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    <article class="archive-item">
-      <p class="post-meta post-meta-title"><a class="page-meta" href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>  • {{ post.date | date: date_format }}</p>
-    </article>
-    {% endfor %}
-{% endfor %}
