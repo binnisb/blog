@@ -10,3 +10,5 @@ plotly
 cufflinks
 psutil
 requests
+altair
+vega_datasets
