@@ -2,7 +2,6 @@
 layout: default
 title: About me
 permalink: /about/
-order: 2
 ---
 
 ![cv_photo](../images/personal/BinniVirkisjokull.png)
