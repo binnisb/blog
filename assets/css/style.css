@@ -411,11 +411,9 @@ h1:hover .anchor-link, h2:hover .anchor-link, h3:hover .anchor-link, h4:hover .a
 
 .search-result-highlight { color: #2e0137; font-weight: bold; }
 
-table { display: block !important; overflow-x: auto; white-space: nowrap; font-size: 75%; border: none; }
+table { display: block !important; white-space: normal; max-width: 100%; font-size: 75%; border: none; }
 
 table th { text-align: center !important; }
-
-table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 ::-webkit-scrollbar { width: 14px; height: 18px; }
 
@@ -427,8 +425,9 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 .output_text.output_execute_result pre { white-space: pre-wrap; }
 
-@media only screen and (max-width: 900px) { /* for mobile phone and tablet devices */
-  .output_wrapper { overflow: scroll; } }
+.output_wrapper { overflow: scroll; }
+
+.svg-icon.orange { width: 30px; height: 23px; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
